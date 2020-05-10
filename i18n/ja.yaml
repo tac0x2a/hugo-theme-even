@@ -26,16 +26,16 @@ pagePV:
 
 # ===== post =====
 prevPage:
-  other: "前へ"
+  other: "新しい方へ"
 
 nextPage:
-  other: "次へ"
+  other: "古い方へ"
 
 prevPost:
-  other: "前の記事へ"
+  other: "新しい記事へ"
 
 nextPost:
-  other: "次の記事へ"
+  other: "古い記事へ"
 
 toc:
   other: "コンテンツ"
