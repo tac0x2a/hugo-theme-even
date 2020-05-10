@@ -55,18 +55,18 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.5 !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: "M PLUS Rounded 1c", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !default;
 
 // Serif font family of the site.
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+$global-serif-font-family: "M PLUS Rounded 1c", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !default;
 
 // Background color of the site.
 $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 26px,
-  h2: 24px,
+  h1: 28px,
+  h2: 28px,
   h3: 20px,
   h4: 16px,
   h5: 14px,
@@ -78,36 +78,24 @@ $global-headings: (
 // Padding of the site header.
 $header-padding: 20px 20px !default;
 
-// Font family: Chancery
-@font-face {
-  font-family: 'Chancery';
-  src: url('../fonts/chancery/apple-chancery-webfont.eot');
-  src: local('Apple Chancery'), url('../fonts/chancery/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/chancery/apple-chancery-webfont.woff2') format('woff2'),
-  url('../fonts/chancery/apple-chancery-webfont.woff') format('woff'),
-  url('../fonts/chancery/apple-chancery-webfont.ttf') format('truetype'),
-  url('../fonts/chancery/apple-chancery-webfont.svg#apple-chancery') format('svg');
-  font-weight: lighter;
-  font-style: normal;
-}
-
 // Font size of the logo.
 $logo-font-size: 48px !default;
 
 // Font family of the logo.
-$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+// $logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+$logo-font-family: 'Quicksand', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !default;
 
 // Margin of menu item.
-$menu-item-margin-left: 10px !default;
+$menu-item-margin-left: 20px !default;
 
 // Margin of menu item in mobile.
 $menu-item-mobile-margin: 5px !default;
 
 // Font size of menu item link.
-$menu-link-font-size: 18px !default;
+$menu-link-font-size: 14px !default;
 
 // Height of the mobile header.
-$mobile-navbar-height: 50px !default;
+$mobile-navbar-height: 40px !default;
 
 // ========== Post ========== //
 // Margin bottom of post list.
@@ -120,10 +108,10 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 27px !default;
+$post-title-font-size: 28px !default;
 
 // Font weight of post title.
-$post-title-font-weight: 400 !default;
+$post-title-font-weight: 100, !default;
 
 // Margin top of the post meta (post time).
 $post-meta-margin-top: 5px !default;
@@ -164,7 +152,7 @@ $post-toc-title-size: 20px !default;
 $post-toc-content: 15px !default;
 
 // List style of the post toc list.
-$post-toc-list-style: square !default;
+$post-toc-list-style: circle !default;
 
 // Max screen media of the post toc.
 $toc-max-sreen-width: 2 * $post-toc-width + $post-toc-margin-left !default;
@@ -193,7 +181,7 @@ $code-color: #c7254e !default;
 $code-font-size: 0.9em !default;
 
 // Font family of the code.
-$code-font-family: Consolas, Monaco, Menlo, "DejaVu Sans Mono",
+$code-font-family: Consolas,  "M PLUS Rounded 1c",  Monaco, Menlo, "DejaVu Sans Mono",
  "Bitstream Vera Sans Mono", "Courier New", monospace !default;
 
 // Color of code highlight, solarized.
