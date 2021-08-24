@@ -1,88 +1,46 @@
-# hugo-theme-even
+# hexo-theme-even
+A super simple theme for Hexo
 
-[![GitHub contributors](https://img.shields.io/github/contributors/olOwOlo/hugo-theme-even.svg?colorB=green)](https://github.com/olOwOlo/hugo-theme-even/contributors)
-[![GitHub release](https://img.shields.io/github/release/olOwOlo/hugo-theme-even.svg?colorB=green)](https://github.com/olOwOlo/hugo-theme-even/releases)
-[![GitHub commits (since latest release)](https://img.shields.io/github/commits-since/olOwOlo/hugo-theme-even/latest.svg?colorB=green)](https://github.com/olOwOlo/hugo-theme-even/compare)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md)
-
-A super concise theme for Hugo
-
-> It's a port of the [hexo-theme-even](https://github.com/ahonn/hexo-theme-even)
-
-[Demo](https://blog.olowolo.com/example-site/) | [中文说明](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md)
+[![GitHub stars](https://img.shields.io/github/stars/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/network)
+[![GitHub issues](https://img.shields.io/github/issues/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
 
 ## Screenshots
+![even-screenshots](https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/55iw9.png)
 
-![even-showcase](https://raw.githubusercontent.com/olOwOlo/hugo-theme-even/master/images/showcase.png)
+[🔯 Live Preview](https://ahonn.github.io/hexo-theme-even/)
 
 ## Installation
-
 ```bash
-$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+$ npm install hexo-renderer-scss hexo-renderer-swig --save
+$ git clone https://github.com/ahonn/hexo-theme-even themes/even
+$ cp themes/even/_config.yml.example themes/even/_config.yml
 ```
 
-**Important:** Take a look inside the [`exampleSite`](https://github.com/olOwOlo/hugo-theme-even/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml). **To use it, copy the [`config.toml`](https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml) in the root folder of your Hugo site.** Feel free to change it.
+Modify `yoursite/_config.yml`:
 
-**Important:** This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/). Modifying contents in `assets` requires the extended version to be installed.
-
-**NOTE:** For this theme, you should use **post** instead of **posts**, namely `hugo new post/some-content.md`.
-
-## Language Support
-
-> Translations are collected from the [`themes/even/i18n/`](https://github.com/olOwOlo/hugo-theme-even/tree/master/i18n) folder (built into the theme), as well as translations present in `i18n/` at the root of your project. The translations will be merged and take precedence over what is in the theme folder.
-
-To use the translations, just set a correct value for [`defaultContentLanguage`](https://github.com/olOwOlo/hugo-theme-even/blob/master/exampleSite/config.toml#L3).
-
-```toml
-defaultContentLanguage = "en"  # en / zh-cn / other...
+```yaml
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: even
 ```
 
-Can also support any other languages as well. For example, to support german, create a file `/i18n/de.yaml` in the root folder of your Hugo site. For reference template you can see the [`en.yaml`](https://github.com/olOwOlo/hugo-theme-even/tree/master/i18n/en.yaml) file.
+For more options, check out the [document](https://github.com/ahonn/hexo-theme-even/wiki)
 
-P.S. In multilingual mode, the language which currently being used to render the website will be used.
+## Update
+You can update to latest master branch by the following command:
 
-## Favicon
-
-In order to customize the favicon you need to place **all** the following files in the `static` folder at the root of your site, which will overwrite those files in the [`themes/even/static/`](https://github.com/olOwOlo/hugo-theme-even/tree/master/static) folder.
-
-- android-chrome-192x192.png
-- android-chrome-512x512.png
-- apple-touch-icon.png
-- browserconfig.xml
-- favicon.ico
-- favicon-16x16.png
-- favicon-32x32.png
-- manifest.json
-- mstile-150x150.png
-- safari-pinned-tab.svg
-
-A [favicon generator](https://www.google.com/search?q=favicon+generator) can help you generate these files.
-
-## Front Matter
-
-You can customize something for a single content in the content's front-matter. The [`themes/even/archetypes/default.md`](https://github.com/olOwOlo/hugo-theme-even/tree/master/archetypes/default.md) shows all available params. Copy this file in the `archetypes` folder at the root of your project will be useful.
-
-## Shortcodes
-
-This theme provides `center`,` right`, `left`,` music`, `admonition` shortcodes, and support `center`,` right`, `left` class for the built-in `figure`. See more information from [there](https://blog.olowolo.com/example-site/post/shortcodes/).
-
-## Theme Color
-
-There are five built-in theme colors ( Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet ), you can config it by changing the `$theme-color-config` value in [`/assets/sass/_variable.scss`](https://github.com/olOwOlo/hugo-theme-even/blob/master/assets/sass/_variables.scss#L5-L8).
-
-## Update Theme
-
-```bash
-cd ./themes/even/
-git pull
+```base
+$ cd themes/even
+$ git pull
 ```
 
-## License
+## Contributing
+Contribution is welcome, feel free to open an issue or pull request.
 
-Released under the [MIT](https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md) License.
+## Contributors
 
-## Acknowledgements
-
-- [ananke](https://github.com/budparr/gohugo-theme-ananke)
-- [hexo-theme-even](https://github.com/ahonn/hexo-theme-even)
-- [hugo-nuo](https://github.com/laozhu/hugo-nuo)
+This project exists thanks to all the people who contribute.
+<a href="https://github.com/ahonn/hexo-theme-even/graphs/contributors"><img src="https://opencollective.com/hexo-theme-even/contributors.svg?width=890&button=false" /></a>
